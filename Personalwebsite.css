@@ -1,31 +1,5 @@
-.video-container {
-  position: relative;
-  width: 100%; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
-  z-index:1;
-}
-
-.video-container video {
-  width: 100%;
-  height: auto;
-}
-
-.overlay-text {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 50;
-  position: absolute;
-  top: 50%; /* Centers text vertically */
-  left: 50%; /* Centers text horizontally */
-  transform: translate(-50%, -50%);
-  color: white; /* Text color */
-  font-size: 2rem; /* Adjust as needed */
-  z-index: 10; /* Ensures the text is above the video */
-  opacity:0;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.fade-in {
-  opacity: 1;
+.FirstPage {
+  background-color: black;
 }
 
 .menu-icon {
@@ -41,7 +15,6 @@
 .menu-icon:hover{
   filter: blur(1px);
 }
-
 .line {
   width: 50%;
   height: 1px;
@@ -83,22 +56,30 @@
 }
 
 .curtain-menu.open {
-
   right: 0; /* Slide in to cover the screen */
 }
 
 .curtain-menu a:hover {
-  color: #ffffff;
+  color: #16ff2e;
 }
 
-h1 {
-  font-size: 5rem;
+.resume {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content in the container */
+  align-items: center; /* Horizontally centers content in the container */
+  font-size: 4rem;
+  color: antiquewhite;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
-.download-button {
-  /* Other existing styles */
-  color: rgb(73, 248, 73); /* Default text color */
-  background-color: transparent; /* Optional: Transparent background */
+  /* Ensure the header takes up the full height and width */
+  height: 100vh; /* This will take the full viewport height */
+  width: 100vw; /* This will take the full viewport width */
+  text-align: center; /* Aligns text content to the center */
 }
 

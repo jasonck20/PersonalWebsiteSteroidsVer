@@ -11,30 +11,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
-<body>
-    
-    <div class="video-container">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="line line-top"></div>
-            <div class="line line-bottom"></div>
-        </div>
-    
-        <div class="curtain-menu" id="curtainMenu">
-            <!-- Menu content here -->
-            <a href="JasonChristoperCV (7).pdf" download="JasonChristoperResume.pdf" class="download-button">
-                <h1 data-value="RESUME">RESUME</h1>
-            </a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <div class="container" onclick="myFunction(this)">
-          </div>
-        <video id="myVideo" autoplay muted loop>
-            <source src="AI_bg1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div id="overlayText" class="overlay-text">Jason Christopher</div>
+<body class="FirstPage">
+    <canvas id="world"></canvas>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="line line-top"></div>
+        <div class="line line-bottom"></div>
     </div>
+
+    <div class="curtain-menu" id="curtainMenu">
+        <!-- Menu content here -->
+        <a href="JasonChristoperCV (7).pdf" download="JasonChristoperResume.pdf" class="download-button">
+            <h1 data-value="RESUME" class="resume">RESUME</h1>
+        </a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    <h1 class="header">Jason Christopher</h1>
+    <div class="container" onclick="myFunction(this)"></div>
+  
 
     <script src="Personalwebsite.js"></script>
 </body>
