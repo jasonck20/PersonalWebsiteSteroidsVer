@@ -11,27 +11,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="nav-wrapper"> <nav>
-        <div id="datetime-container" class="hover-this center-top">
-            <div id="date"></div>
-        </div>
-        <div id="clock" class="hover-this top-left"></div>
-        <div class="hover-this firstname"><span>Jason</span></div>
-        <div class="hover-this secondname"><span>Christopher</span></div>
-        <div class="cursor"></div>
-      </nav>
+    <div class="nav-wrapper"> 
+        <nav>
+            <div id="datetime-container" class="hover-this center-top">
+                <div id="date"></div>
+            </div>
+            <div id="clock" class="hover-this top-left"></div>
+            <div class="hover-this firstname"><span>Jason</span></div>
+            <div class="hover-this secondname"><span>Christopher</span></div>
+            <div class="cursor"></div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="line line-top"></div>
+                <div class="line line-bottom"></div>
+            </div>
+            <div class="curtain-menu" id="curtainMenu">
+                <!-- Menu content here -->
+                <a href="JasonChristoperCV (7).pdf" download="JasonChristoperResume.pdf" class="download-button">
+                    <h1 data-value="RESUME" class="resume">RESUME</h1>
+                </a>
+            </div>
+        </nav>
     </div>
-    <div class="menu-icon" onclick="toggleMenu()">
-        
-        <div class="line line-top"></div>
-        <div class="line line-bottom"></div>
-    </div>
-    <div class="curtain-menu" id="curtainMenu">
-        <!-- Menu content here -->
-        <a href="JasonChristoperCV (7).pdf" download="JasonChristoperResume.pdf" class="download-button">
-            <h1 data-value="RESUME" class="resume">RESUME</h1>
-        </a>
-    </div>
+   
 
     <div class="container " onclick="myFunction(this)"></div>
     <script src="Personalwebsite.js"></script>
