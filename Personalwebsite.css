@@ -134,6 +134,13 @@ span {
   transform: rotate(-45deg) translate(0.4375em, -0.375em);
 }
 
+/* Apply similar effect to .menu-icon on hover */
+.menu-icon:hover {
+  /* Replicate the hover effect of .hover-this here */
+  transform: scale(1.4); /* This is just an example, adjust as needed */
+  
+}
+
 .curtain-menu {
   position: fixed;
   top: 0;
