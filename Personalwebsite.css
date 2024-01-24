@@ -10,7 +10,7 @@ body {
 
 .center-top {
   position: fixed;
-  top: 10px;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -26,8 +26,8 @@ body {
 
 .top-left {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 1%;
+  left: 1%;
   font-family: monospace;
   font-weight: 600;
   font-size: 2rem;
