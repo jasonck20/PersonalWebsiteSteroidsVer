@@ -22,7 +22,7 @@ body {
 }
 
 #date {
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .top-left {
@@ -31,7 +31,7 @@ body {
   left: 1%;
   font-family: monospace;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 2vw;
   color: #d5d5d5;
   display: inline-block;
 }
