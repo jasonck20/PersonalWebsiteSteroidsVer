@@ -4,6 +4,66 @@
   100% { background-position: 0% 50%; }
 }
 
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10vh);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-in; /* Changed from ease-in-out to ease-in */
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10vh); /* Start above the final position */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at the final position */
+  }
+}
+
+.fade-in-down {
+  animation: fadeInDown 1s ease-in; /* Apply the fadeInDown animation */
+}
+
+@keyframes fadeInRightToLeft {
+  from {
+      opacity: 0;
+      transform: translateX(20px); /* Start 20px to the right of the final position */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at the final position */
+  }
+}
+
+.fade-in-right-to-left {
+  animation: fadeInRightToLeft 1s ease-in; /* Apply the fadeInRightToLeft animation */
+}
+
+@keyframes fadeInLeftToRight {
+  from {
+      opacity: 0;
+      transform: translateX(-20px); /* Start 20px to the left of the final position */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at the final position */
+  }
+}
+
+.fade-in-left-to-right {
+  animation: fadeInLeftToRight 1s ease-in; /* Apply the fadeInLeftToRight animation */
+}
+
 body {
   cursor: none;
 }
@@ -153,8 +213,8 @@ span {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   overflow-x: hidden;
   transition: right 0.5s;
   z-index: 999; /* Lower than menu icon */
@@ -172,7 +232,6 @@ span {
   cursor: None;
   color: #787878;
 }
-
 
 
 .resume {

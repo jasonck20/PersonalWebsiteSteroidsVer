@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.animate-on-load');
+    elements.forEach(el => {
+        el.style.animationPlayState = 'running';
+    });
+});
+
 function toggleMenu() {
     var menu = document.getElementById("curtainMenu");
     var icon = document.querySelector(".menu-icon");
