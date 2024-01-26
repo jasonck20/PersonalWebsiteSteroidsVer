@@ -23,12 +23,14 @@ body {
 
 #date {
   font-size: 2vw;
+  width: fit-content;
 }
 
 .top-left {
   position: fixed;
   top: 1%;
   left: 1%;
+  width: fit-content;
   font-family: monospace;
   font-weight: 600;
   font-size: 2vw;
@@ -46,6 +48,7 @@ body {
   animation: gradientAnimation 30s ease infinite;
   position: relative;
 }
+
 
 nav {
   width: 100%;
@@ -106,8 +109,8 @@ span {
 
 .menu-icon {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5vh;
+  right: 2vh;
   z-index: 1000; /* Higher than the curtain menu */
   display: inline-block;
   transition: transform 0.1s linear;
@@ -170,10 +173,22 @@ span {
   color: #787878;
 }
 
+
+
 .resume {
   font-family: 'Russo One', sans-serif;
-  font-size: 6rem;
+  font-size: 6vw;
   color: rgb(255, 255, 255);
 }
 
+.page {
+  transition: transform 0.5s ease-in-out;
+}
 
+.move-left {
+  transform: translateX(-100%);
+}
+
+.move-right {
+  transform: translateX(100%);
+}

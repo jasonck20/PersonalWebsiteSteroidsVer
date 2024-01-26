@@ -25,6 +25,7 @@ document.querySelector("h1").onmouseover = event => {
 }
 
 
+
 (function () {
 
 	const link = document.querySelectorAll('nav > .hover-this');
@@ -78,3 +79,45 @@ function updateDateTime() {
 
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+window.addEventListener('scroll', function() {
+    // Determine the scroll direction
+    let lastScroll = 0;
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0) {
+        return;
+    }
+
+    if (currentScroll > lastScroll) {
+        // Scrolling down
+        handleScrollDown();
+    } else {
+        // Scrolling up (optional, if you want to handle this)
+        handleScrollUp();
+    }
+
+    lastScroll = currentScroll;
+});
+
+function handleScrollDown() {
+    // Logic to animate current page out and next page in
+    animatePageTransition();
+}
+
+function handleScrollUp() {
+    // Logic for scrolling up, if necessary
+}
+
+function animatePageTransition() {
+    // Assuming pages have a common class 'page'
+    const pages = document.querySelectorAll('.page');
+    let currentPage = 0; // Track the current page
+
+    // Move current page out
+    pages[currentPage].classList.add('move-left');
+
+    // Bring the next page in
+    currentPage = (currentPage + 1) % pages.length;
+    pages[currentPage].classList.add('move-right');
+}
