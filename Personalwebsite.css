@@ -16,8 +16,9 @@ body {
   text-align: center;
   font-family: monospace;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1vw;
   color: #d5d5d5;
+  display: inline-block;
 }
 
 #date {
@@ -30,8 +31,9 @@ body {
   left: 1%;
   font-family: monospace;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1vw;
   color: #d5d5d5;
+  display: inline-block;
 }
 
 .nav-wrapper {
@@ -50,7 +52,7 @@ nav {
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 40%;
 }
 
 .hover-this {
@@ -62,7 +64,7 @@ span {
   font-family: 'Russo One', sans-serif;
   font-weight: 100;
   color: #fdf1f1;
-  font-size: 15rem; /* Adjust this value as needed */
+  font-size: 9vw; /* Adjust this value as needed */
   text-transform: uppercase;
   white-space: nowrap; /* Prevent line breaks */
   transition: transform 0.1s linear;
