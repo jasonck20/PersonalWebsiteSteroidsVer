@@ -256,7 +256,7 @@ span {
   bottom: 20px; 
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;  
+  width: 50px;  
   height: auto;
   z-index: 10000;
 }
@@ -266,3 +266,15 @@ span {
   width: 100%;
   height: auto;
 }
+
+
+.github-icon {
+  transform: scale(1);
+  transition: transform 0.8s ease-out; 
+}
+
+.github-icon:hover {
+  transform: scale(2); 
+  transition: transform 0.3s ease-in; 
+}
+
