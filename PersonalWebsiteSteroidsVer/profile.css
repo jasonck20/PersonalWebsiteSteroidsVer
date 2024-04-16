@@ -1,0 +1,196 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background: #f6f8fa; /* GitHub's light grey background color */
+    margin: 0;
+    padding: 20px;
+    color: #24292e; /* GitHub's default text color */
+}
+
+.profile-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* Bright white for the main content area */
+    border-radius: 6px;
+    border: 1px solid #d1d5da; /* Slight border similar to GitHub's cards */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e4e8; /* Lighter grey for separation */
+    padding-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    margin-right: 20px;
+}
+
+.profile-header h1 {
+    margin: 0;
+    color: #24292e; /* GitHub's default text color for better contrast */
+}
+
+.bio {
+    font-size: 14px;
+    color: #586069; /* GitHub's subtle text color for non-primary content */
+}
+
+.profile-body {
+    margin-top: 20px;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li a {
+    color: #0366d6; /* GitHub's link color */
+    text-decoration: none;
+}
+
+.project-list li a:hover {
+    text-decoration: underline;
+    color: #032f62; /* Darker blue on hover for better visibility */
+}
+
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  :root {
+    --background-color: #f6f8fa;
+    --text-color: #24292e;
+    --link-color: #0366d6;
+    --link-hover-color: #032f62;
+    --profile-background-color: #ffffff;
+    --border-color: #d1d5da;
+    --avatar-size: 500px; /* New variable for avatar size */
+    --font-size-base: 18px; /* New variable for base font size */
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #24292e;
+    --text-color: #c9d1d9;
+    --link-color: #58a6ff;
+    --link-hover-color: #1f6feb;
+    --profile-background-color: #0d1117;
+    --border-color: #30363d;
+  }
+  
+  body {
+      font-family: monospace;
+      background: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      font-size: var(--font-size-base);
+      transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .profile-section {
+      width: 90%; /* Increase width to use more screen space */
+      max-width: 1900px; /* Optional larger max-width */
+      margin: 30px auto;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background: var(--profile-background-color);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+  }
+  
+  .profile-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e1e4e8;
+      padding-bottom: 30px;
+  }
+  
+  .profile-avatar {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    margin-right: 30px;
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
+}
+
+  
+  .profile-header h1 {
+      margin: 0;
+      font-size: 2em; /* Larger font size for the main heading */
+  }
+  
+  .bio {
+      font-size: 1.2em; /* Larger font size for the bio */
+      color: var(--text-color);
+  }
+  
+  .profile-body h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+  }
+  
+  .project-list {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .project-list li a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-size: 1.1em; /* Larger font size for links */
+  }
+  
+  .project-list li a:hover {
+      text-decoration: underline;
+      color: var(--link-hover-color);
+  }
+  
+  
