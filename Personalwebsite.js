@@ -128,3 +128,4 @@ function animatePageTransition() {
     currentPage = (currentPage + 1) % pages.length;
     pages[currentPage].classList.add('move-right');
 }
+

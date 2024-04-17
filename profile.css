@@ -155,8 +155,8 @@ body {
   }
   
   .profile-avatar {
-    width: var(--avatar-size);
-    height: var(--avatar-size);
+    width: 26em;
+    height: 26em;
     margin-right: 30px;
     object-fit: cover; /* Ensures the image covers the area without being stretched */
 }
@@ -164,7 +164,7 @@ body {
   
   .profile-header h1 {
       margin: 0;
-      font-size: 2em; /* Larger font size for the main heading */
+      font-size: 3em; /* Larger font size for the main heading */
   }
   
   .bio {
@@ -173,24 +173,94 @@ body {
   }
   
   .profile-body h2 {
-      font-size: 1.5em;
+      font-size: 2em;
       margin-top: 30px;
   }
   
-  .project-list {
-      list-style: none;
-      padding: 0;
-  }
+
+  .back-button-container {
+    position: fixed; /* Keeps the button at the same place even on scroll */
+    top: 1vh; /* 2% of the viewport height from the top */
+    left: 1vw; /* 2% of the viewport width from the left */
+}
+
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #585757; /* Change to match your color scheme */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust size as needed */
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #666; /* Slightly lighter on hover */
+
+}
   
-  .project-list li a {
-      color: var(--link-color);
-      text-decoration: none;
-      font-size: 1.1em; /* Larger font size for links */
-  }
-  
-  .project-list li a:hover {
-      text-decoration: underline;
-      color: var(--link-hover-color);
-  }
-  
-  
+@media (max-width: 500px) {
+    .back-button-container {
+        top: 10px;
+        left: 10px;
+    }
+    .back-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.hobbies {
+    font-size: 3vh;
+}
+
+
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--profile-background-color); 
+    border: 1px solid var(--border-color); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-card h3, .project-card p {
+    color: var(--text-color); /* Ensure text colors use the variable */
+}
+
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.project-card:hover {
+    animation: jump 0.6s ease-in-o;
+}
