@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="profile.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="back-button-container">
@@ -23,10 +25,10 @@
             </div>
         </div>
         <div class="project-cards-container">
-            <div class="project-card">
-                <img src="path/to/image1.png" alt="Project Image">
-                <h3>Project Title 1</h3>
-                <p>This is a brief description of the project.</p>
+            <div class="project-card" onclick="openDialog('project1')">
+                <img src="QR_project.png" alt="Project Image">
+                <h3>QRazy-scanner</h3>
+                <p>QR scanning app for event organizers and attendees built on Java</p>
             </div>
             <div class="project-card">
                 <img src="path/to/image2.png" alt="Project Image">
@@ -38,7 +40,16 @@
                 <h3>Project Title 3</h3>
                 <p>This is a brief description of the project.</p>
             </div>
-            <!-- Add more cards as needed -->
+
+
+            <div id="dialog" class="dialog" style="display:none;">
+                <div class="dialog-content">
+                    <span class="close-button" onclick="closeDialog()">&times;</span>
+                    <h1>QRazy-scanner</h1>
+                    <p>More detailed information about the project...</p>
+                </div>
+            </div>
+            
         </div>
         
     </div>
@@ -49,6 +60,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     
-    <script src="profile.js"></script> <!-- Link to the JavaScript file -->
+    <script src="profile.js"></script> 
 </body>
 </html>

@@ -14,3 +14,11 @@ document.getElementById('dark-mode-toggle').addEventListener('change', function(
         document.documentElement.removeAttribute('data-theme');
     }
 });
+
+function openDialog(projectId) {
+    document.getElementById('dialog').style.display = 'flex';
+}
+
+function closeDialog() {
+    document.getElementById('dialog').style.display = 'none';
+}
